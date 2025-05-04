@@ -3,3 +3,4 @@ httpx==0.27.0 #Gemini gibi dış servislerle haberleşme
 uvicorn
 python-dotenv
 google-generativeai
+streamlit==1.45.0
