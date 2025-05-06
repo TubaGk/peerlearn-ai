@@ -6,10 +6,10 @@ def show():
 
     st.markdown("Öğrencilerin performansını ve sistem kullanımını buradan takip edebilirsiniz.")
 
-    # 🔹 Sınıf seçimi
+    # Sınıf seçimi
     selected_class = st.selectbox("Sınıf Seçiniz", ["10. Sınıf", "11. Sınıf", "Tüm Sınıflar"])
 
-    # 🔹 Mock öğrenci verisi
+    # Mock öğrenci verisi
     data = [
         {"Ad": "Aylin Demir", "Sınıf": 10, "Puan": 4.5, "Anlatım Sayısı": 3, "Eşleşme Sayısı": 2},
         {"Ad": "Emir Yılmaz", "Sınıf": 10, "Puan": 4.8, "Anlatım Sayısı": 5, "Eşleşme Sayısı": 4},
@@ -18,7 +18,7 @@ def show():
     ]
     df = pd.DataFrame(data)
 
-    # 🔹 Sınıfa göre filtreleme
+    # Sınıfa göre filtreleme
     if selected_class == "10. Sınıf":
         df = df[df["Sınıf"] == 10]
     elif selected_class == "11. Sınıf":

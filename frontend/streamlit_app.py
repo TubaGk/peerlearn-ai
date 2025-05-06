@@ -22,7 +22,7 @@ page = st.sidebar.radio("Sayfa Seç", [
     "👤 Öğrenci Profili"
 ])
 
-# 🛑 Giriş kontrolü: sadece giriş sayfası hariç sayfalarda engelle
+# Giriş kontrolü: sadece giriş sayfası hariç sayfalarda engelle
 if page != "🔐 Giriş" and not st.session_state["logged_in"]:
     st.warning("Bu sayfayı görmek için lütfen önce giriş yapın.")
     show_login()

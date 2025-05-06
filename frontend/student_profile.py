@@ -6,10 +6,10 @@ def show():
 
     st.markdown("Aşağıda öğrencinin geçmiş eşleşmeleri ve yaptığı anlatımlar yer almaktadır.")
 
-    # 🔹 Öğrenci Seçimi (şimdilik ID)
+    # Öğrenci Seçimi (şimdilik ID)
     student_id = st.selectbox("Öğrenci ID Seçiniz", [1, 2, 3])
 
-    # 🔹 Mock anlatım geçmişi
+    # Mock anlatım geçmişi
     explanations = {
         1: [{"Konu": "Türev", "Puan": 4, "Yorum": "Tanım doğru, örnek eksik."},
             {"Konu": "İyon", "Puan": 5, "Yorum": "Harika anlatım!"}],
@@ -17,7 +17,7 @@ def show():
         3: []
     }
 
-    # 🔹 Mock eşleşme geçmişi
+    # Mock eşleşme geçmişi
     matches = {
         1: [{"Konu": "Fonksiyon Grafikleri", "Eşleştiği Kişi": "Emir Yılmaz", "Puan": 4.8}],
         2: [{"Konu": "Asit-Baz", "Eşleştiği Kişi": "Aylin Demir", "Puan": 4.5}],

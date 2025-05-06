@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öğretmen Paneli</title>
+</head>
+<body>
+    <h1>📊 Öğretmen Paneli</h1>
+    <p>Öğrencilerin performansını ve sistem kullanımını buradan takip edebilirsiniz.</p>
+
+    <h2>📋 Öğrenci Listesi</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Ad</th>
+                <th>Sınıf</th>
+                <th>Puan</th>
+                <th>Anlatım Sayısı</th>
+                <th>Eşleşme Sayısı</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+            <tr>
+                <td>{{ row['Ad'] }}</td>
+                <td>{{ row['Sınıf'] }}</td>
+                <td>{{ row['Puan'] }}</td>
+                <td>{{ row['Anlatım Sayısı'] }}</td>
+                <td>{{ row['Eşleşme Sayısı'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h2>📈 Ortalama Puan Dağılımı</h2>
+    <a href="/plot/puan">Grafiği Görüntüle</a>
+
+    <h2>📚 Anlatım Aktivitesi</h2>
+    <a href="/plot/anlatim">Grafiği Görüntüle</a>
+</body>
+</html>
