@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grafik</title>
+  <meta charset="UTF-8">
+  <title>Grafik</title>
+  <link rel="stylesheet" href="./static/css/style.css">
 </head>
 <body>
-    <h1>Grafik Görüntüle</h1>
-    <img src="data:image/png;base64,{{ plot_url }}" alt="Grafik">
-    <br>
-    <a href="/">Ana Sayfaya Dön</a>
+  <div class="header">
+    <h1>🎓 PeerLearn AI</h1>
+    <p>📈 Görselleştirilmiş Veriler</p>
+  </div>
+
+  <div style="text-align:center">
+    <img src="data:image/png;base64,{{ plot_url }}" alt="Grafik" style="max-width:90%;">
+    <br><br>
+    <a href="/">🔙 Ana Sayfa</a>
+  </div>
 </body>
 </html>

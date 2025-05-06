@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Öğretmen Paneli</title>
+  <meta charset="UTF-8">
+  <title>Öğretmen Paneli</title>
+  <link rel="stylesheet" href="./static/css/style.css">
 </head>
 <body>
-    <h1>📊 Öğretmen Paneli</h1>
-    <p>Öğrencilerin performansını ve sistem kullanımını buradan takip edebilirsiniz.</p>
+  <div class="header">
+    <h1>🎓 PeerLearn AI</h1>
+    <p>Öğretmen Kontrol Paneli</p>
+  </div>
 
-    <h2>📋 Öğrenci Listesi</h2>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>Ad</th>
-                <th>Sınıf</th>
-                <th>Puan</th>
-                <th>Anlatım Sayısı</th>
-                <th>Eşleşme Sayısı</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for row in data %}
-            <tr>
-                <td>{{ row['Ad'] }}</td>
-                <td>{{ row['Sınıf'] }}</td>
-                <td>{{ row['Puan'] }}</td>
-                <td>{{ row['Anlatım Sayısı'] }}</td>
-                <td>{{ row['Eşleşme Sayısı'] }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
+  <div class="table-container">
+    <h2>📋 Öğrenci Performans Listesi</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Ad</th>
+          <th>Sınıf</th>
+          <th>Puan</th>
+          <th>Anlatım Sayısı</th>
+          <th>Eşleşme Sayısı</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Aylin Demir</td>
+          <td>10</td>
+          <td>4.5</td>
+          <td>3</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Emir Yılmaz</td>
+          <td>11</td>
+          <td>4.8</td>
+          <td>5</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Deniz Kara</td>
+          <td>10</td>
+          <td>4.2</td>
+          <td>2</td>
+          <td>1</td>
+        </tr>
+      </tbody>
     </table>
 
-    <h2>📈 Ortalama Puan Dağılımı</h2>
-    <a href="/plot/puan">Grafiği Görüntüle</a>
+    <h3>📈 Ortalama Puan Dağılımı</h3>
+    <a href="plot.html">Grafiği Görüntüle</a>
 
-    <h2>📚 Anlatım Aktivitesi</h2>
-    <a href="/plot/anlatim">Grafiği Görüntüle</a>
+    <h3>📚 Anlatım Aktivitesi</h3>
+    <a href="plot.html">Grafiği Görüntüle</a>
+  </div>
 </body>
 </html>

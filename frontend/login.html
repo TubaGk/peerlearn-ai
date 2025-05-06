@@ -3,19 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <title>Giriş Yap</title>
+  <link rel="stylesheet" href="./static/css/style.css">
 </head>
 <body>
-  <h1>🔐 Giriş Sayfası</h1>
-  <form>
-    <label>E-posta: <input type="email" required></label><br><br>
-    <label>Şifre: <input type="password" required></label><br><br>
-    <label>Kullanıcı Tipi:
+  <div class="header">
+    <h1>🎓 PeerLearn AI</h1>
+    <p>AI Destekli Akran Öğrenme Platformu</p>
+  </div>
+
+  <div class="form-container">
+    <h2>🔐 Giriş</h2>
+    <p>Sisteme giriş yaparak içerik oluşturabilir, eşleştirme alabilir ya da öğrenci performanslarını takip edebilirsiniz.</p>
+    <form>
+      <label>E-posta:</label>
+      <input type="email" placeholder="ornek@ogrenci.com" required>
+
+      <label>Şifre:</label>
+      <input type="password" placeholder="Şifrenizi girin" required>
+
+      <label>Kullanıcı Tipi:</label>
       <select>
-        <option>Öğrenci</option>
-        <option>Öğretmen</option>
+        <option>👩‍🎓 Öğrenci</option>
+        <option>👨‍🏫 Öğretmen</option>
       </select>
-    </label><br><br>
-    <button type="submit">Giriş Yap</button>
-  </form>
+
+      <button type="submit">🚀 Giriş Yap</button>
+    </form>
+  </div>
 </body>
 </html>

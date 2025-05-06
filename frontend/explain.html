@@ -3,15 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <title>Anlatım Değerlendirme</title>
+  <link rel="stylesheet" href="./static/css/style.css">
 </head>
 <body>
-  <h1>🧠 Anlatımını Oluştur</h1>
-  <form>
-    <label>Konu: <input type="text" name="topic"></label><br><br>
-    <label>Anlatımın:<br>
-      <textarea rows="6" cols="50" placeholder="Kendi cümlelerinle açıklama yap..."></textarea>
-    </label><br><br>
-    <button type="submit">AI ile Değerlendir</button>
-  </form>
+  <div class="header">
+    <h1>🎓 PeerLearn AI</h1>
+    <p>AI Destekli Akran Öğrenme Platformu</p>
+  </div>
+
+  <div class="form-container">
+    <h2>🧠 Anlatımını Oluştur</h2>
+    <p>Bu bölümde bir konuyu kendi cümlelerinle açıkla. AI, anlatımını değerlendirecek ve sana geri bildirim sağlayacak.</p>
+    <form>
+      <label>Konu:</label>
+      <input type="text" name="topic" placeholder="Örnek: Fotosentez">
+
+      <label>Anlatımın:</label>
+      <textarea rows="6" placeholder="Kendi cümlelerinle açıkla..."></textarea>
+
+      <button type="submit">📊 AI ile Değerlendir</button>
+    </form>
+  </div>
 </body>
 </html>

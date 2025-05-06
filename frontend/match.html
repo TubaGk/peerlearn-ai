@@ -3,19 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <title>Akran Eşleştirme</title>
+  <link rel="stylesheet" href="./static/css/style.css">
 </head>
 <body>
-  <h1>👥 Akran Eşleştirme</h1>
-  <form>
-    <label>Öğrenci ID: <input type="number" name="student_id"></label><br><br>
-    <label>Sınıf:
+  <div class="header">
+    <h1>🎓 PeerLearn AI</h1>
+    <p>👥 Eşleştirme Paneli</p>
+  </div>
+
+  <div class="form-container">
+    <h2>🤝 Akran Desteği Al</h2>
+    <p>Zorlandığın konuyu girerek sana yardımcı olabilecek bir arkadaşla eşleş!</p>
+    <form>
+      <label>Öğrenci ID:</label>
+      <input type="number" placeholder="Örneğin: 101">
+
+      <label>Sınıf:</label>
       <select>
         <option>10</option>
         <option>11</option>
       </select>
-    </label><br><br>
-    <label>Zorlandığın Konu: <input type="text" name="topic"></label><br><br>
-    <button type="submit">Eşleşme Talep Et</button>
-  </form>
+
+      <label>Zorlandığın Konu:</label>
+      <input type="text" placeholder="Örnek: Kimyasal Tepkimeler">
+
+      <button type="submit">🔍 Eşleşme Talep Et</button>
+    </form>
+  </div>
 </body>
 </html>
